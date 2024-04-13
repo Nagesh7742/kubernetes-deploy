@@ -16,7 +16,7 @@ specs:
     spec:
       containers:
         - name: worker-app
-          image: kodekloud/examplevotingapp_worker:v1
+          image: dockersamples/examplevotingapp_worker
   selector:
     matchLabels:
       name: worker-app-demo
