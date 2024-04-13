@@ -8,7 +8,7 @@ metadata:
 specs:
   replicas: 1
   template:
-    metadate:
+    metadata:
       name: postgress-app-demo
       labels:
         name: postgress-app-demo
