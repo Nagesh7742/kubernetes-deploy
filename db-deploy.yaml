@@ -1,0 +1,27 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: db-app-deploy
+  labels:
+    name: db-app-deploy
+    app: demo-app
+specs:
+  replicas: 1
+  template:
+    metadate:
+      name: db-app-demo
+      labels:
+        name: db-app-demo
+        app: demo-app
+    spec:
+      containers:
+        - name: db-app
+          image: redis
+          ports:
+            - containerPort: 6379
+  selector:
+    matchLabels:
+      name: db-app-demo
+      app: demo-app
+            
+    
