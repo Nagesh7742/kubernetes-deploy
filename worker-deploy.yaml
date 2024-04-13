@@ -8,7 +8,7 @@ metadata:
 specs:
   replicas: 1
   template:
-    metadate:
+    metadata:
       name: worker-app-demo
       labels:
         name: worker-app-demo
