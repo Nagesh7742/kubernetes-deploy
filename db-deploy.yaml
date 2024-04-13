@@ -8,7 +8,7 @@ metadata:
 specs:
   replicas: 1
   template:
-    metadate:
+    metadata:
       name: db-app-demo
       labels:
         name: db-app-demo
